@@ -1,0 +1,43 @@
+// generic transform
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+// generic transform
+@mixin transformOrigin($x :50%,$y:100%) {
+    transform-origin: $x $y;
+    -webkit-transform-origin: $x $y;
+    -moz-transform-origin: $x $y;
+    -o-transform-origin: $x $y;
+    -ms-transform-origin: $x $y;
+}
+
+
+// rotate
+@mixin rotate ($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+    @include transform(scale($scale));
+}
+
+// translate
+@mixin translate ($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+// skew
+@mixin skew ($x, $y) {
+    @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// rotate and translate
+@mixin rotateTranslate ($deg, $x, $y) {
+    @include transform(rotate(#{$deg}deg)translate($x, $y));
+}

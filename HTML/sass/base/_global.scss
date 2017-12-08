@@ -1,0 +1,14 @@
+html,
+body{    
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: $font-size-default;
+}
+html,
+body,
+ul{
+    margin: 0;
+    padding: 0;
+}
+a:hover,a:active,a:focus{
+    text-decoration: none;
+}
