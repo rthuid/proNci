@@ -1,6 +1,6 @@
 $(document).ready(function () {
     /****-- sub-menu --****/
-    $(document).on('click', '.sub-menu > i' , function () {
+    $(document).on('click', '.sub-menu > i', function () {
         $(this).each(function () {
             $(this).siblings('ul.sub-list').first().slideToggle(100);
             $(this).parent('li.sub-menu').toggleClass('open');
@@ -10,5 +10,34 @@ $(document).ready(function () {
         })
     });
     /****-- /sub-menu --****/
-    
+
+    /****-- nav-toggle --****/
+    $(document).on('click', '.nav-toggle', function () {
+        $('.main-nav').slideToggle(250);
+        //closing list items
+        $('.main-nav').find('.sub-menu.open > i').click();
+        $(this).toggleClass('open');
+    });
+    /****-- /nav-toggle --****/
+    /****-- slider --****/
+    $('.main_slider').bxSlider({
+        auto: true,
+        pager: true,
+        autoHover: true,
+        useCSS: false,
+        speed: 300,
+//        easing: 'easeInOutBack',
+
+        onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
+//            console.log(currentSlideHtmlObject);
+            $('.active-slide').removeClass('active-slide');
+            $('.main_slider > li').eq(currentSlideHtmlObject + 1).addClass('active-slide')
+        },
+        onSliderLoad: function () {
+            $('.main_slider > li').eq(1).addClass('active-slide')
+        }
+    });
+    /****-- /slider --****/
+
+
 });

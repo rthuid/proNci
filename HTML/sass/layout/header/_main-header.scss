@@ -29,6 +29,9 @@
         -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
+    .nav-toggle{
+        display: none;
+    }
     .call-search-wrapper {
         -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;
@@ -66,7 +69,6 @@
         }
     }
 }
-
 @media only screen and (max-width: $mediaQuery-md) {
     .main-header {
         .call-search-wrapper {
@@ -82,38 +84,117 @@
         }
     }
 }
-@media only screen and (max-width: $mediaQuery-sm){
+@media only screen and (max-width: $mediaQuery-sm) {
     .main-header {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0;
+        padding-bottom: $padding-default *1.5;
         .call-search-wrapper {
-            position: absolute;
-            top: 10px;
-            left: $padding-default;
-            right: $padding-default;
-            -webkit-flex: none;
-            -ms-flex: none;
-            flex: none;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            -webkit-flex: 0 1 100%;
+            -ms-flex: 0 1 100%;
+            flex: 1 0 100%;
+            align-self: stretch;
             font-size: $font-size-default - 2;
+            margin-left: -$padding-default;
+            margin-right: -$padding-default;
+            padding: $padding-default/2 0;
+            padding-left: $padding-default;
+            padding-right: $padding-default;
+            background: $clr-white-one;
+            margin-bottom: $padding-default*1.5;
             .search-site-wrapper {
                 width: 180px;
                 float: right;
-                .input{
+                max-width: 48%;
+                .input {
                     padding: $padding-default/3+1 $padding-default/1.5;
                     background: $clr-white;
-//                    padding-right: 
+                    padding-right: $padding-default*2;
                 }
-                .button{
+                .button {
                     padding: $padding-default/3 $padding-default/1.5
                 }
             }
             .call-us {
                 line-height: 32px;
-                span.hide-sm{
+                margin-right: 0;
+                span.hide-sm {
                     display: none;
                 }
             }
         }
         .logo {
             width: 200px;
+            -webkit-order: 2;
+            -ms-flex-order: 2;
+            order: 2;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            align-self: stretch;
+        }
+        .nav-toggle {
+            -webkit-order: 3;
+            -ms-flex-order: 3;
+            order: 3;
+            position: relative;
+            background-color: transparent;
+            background-image: none;
+            width: 24px;
+            height: 20px;
+            border: 0px;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            display: block;
+            &:before {
+                content: '';
+                display: block;
+                border-bottom: 4px solid $clr-twilight-blue;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                @include translate (0, -50%);
+                width: 100%;
+            }
+            > span {
+                display: block;
+                &:before {
+                    content: '';
+                    display: block;
+                    border-bottom: 4px solid $clr-twilight-blue;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    border-bottom: 4px solid $clr-twilight-blue;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}
+@media only screen and (max-width: $mediaQuery-xs){
+    .main-header {
+        .logo {
+            width: 178px;
         }
     }
 }
