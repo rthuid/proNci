@@ -1,30 +1,11 @@
 $(document).ready(function () {
-    /****-- sub-menu --****/
-    $(document).on('click', '.sub-menu > i', function () {
-        $(this).each(function () {
-            $(this).siblings('ul.sub-list').first().slideToggle(100);
-            $(this).parent('li.sub-menu').toggleClass('open');
-            $(this).parent('li.sub-menu').siblings('.open').children('ul.sub-list').slideToggle(100);
-            $(this).parent('li.sub-menu').siblings('.open').removeClass('open');
-
-        })
-    });
-    /****-- /sub-menu --****/
-
-    /****-- nav-toggle --****/
-    $(document).on('click', '.nav-toggle', function () {
-        $('.main-nav').slideToggle(250);
-        //closing list items
-        $('.main-nav').find('.sub-menu.open > i').click();
-        $(this).toggleClass('open');
-    });
-    /****-- /nav-toggle --****/
     /****-- slider --****/
     $('.main_slider').bxSlider({
         auto: true,
         pager: true,
         autoHover: true,
         useCSS: false,
+        controls: false,
         speed: 300,
 //        easing: 'easeInOutBack',
 
@@ -38,6 +19,30 @@ $(document).ready(function () {
         }
     });
     /****-- /slider --****/
+    /****-- sub-menu --****/
+    $(document).on('click', '.sub-menu > i', function () {
+        $(this).each(function () {
+            $(this).siblings('ul.sub-list').first().slideToggle(100);
+            $(this).parent('li.sub-menu').toggleClass('open');
+            $(this).parent('li.sub-menu').siblings('.open').children('ul.sub-list').slideToggle(100);
+            $(this).parent('li.sub-menu').siblings('.open').removeClass('open');
+
+        })
+    });
+    /****-- /sub-menu --****/
+    /****-- nav-toggle --****/
+    $(document).on('click', '.nav-toggle', function () {
+        $('.main-nav').slideToggle(250);
+        //closing list items
+        $('.main-nav').find('.sub-menu.open > i').click();
+        $(this).toggleClass('open');
+    });
+    /****-- /nav-toggle --****/
+    /****-- banner-form-toggle --****/
+    $(document).on('click', '.btn-banner-form', function () {
+        $('.banner-form').toggleClass('open');
+    });
+    /****-- /banner-form-toggle --****/
 
 
 });

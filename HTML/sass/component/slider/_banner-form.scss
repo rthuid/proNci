@@ -1,0 +1,48 @@
+.banner-form {
+    background: $clr-twilight-blue;
+    color: $clr-white;
+    padding: $padding-default*2 0;
+    position: relative;
+    max-width: 40%;
+    padding-right: $padding-default*6;
+    @include translate ($x:0, $y:350px) ;
+    @include transition ($time:.1s,$fun:ease-out) ;
+    &.open{
+        @include translate ($x:0, $y:0px) ;
+    }
+    .form-wrapper{
+        position: relative;
+    }
+
+    //    @include translate(0,50%);
+    //    z-index:----- base/_z-index.scss
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 300%;
+        background: $clr-twilight-blue;
+        z-index: -1;
+    }
+    .heading {
+        font-size: $font-size-large;
+        font-weight: bold;
+        margin: 0;
+    }
+    .sub-heading {
+        display: block;
+        color: $clr-white;
+        font-size: $font-size-default;
+        padding-top: $padding-default/4;
+        margin: 0;
+        font-weight: 300;
+        margin-bottom: $padding-default;
+        &.padding-top{
+            @extend .padding-top;
+        }
+    }
+
+}

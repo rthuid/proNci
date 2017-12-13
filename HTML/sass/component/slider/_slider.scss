@@ -1,0 +1,81 @@
+.slide_out{
+    position: relative;
+    overflow: hidden;
+}
+.bx-wrapper {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100% !important;
+    .bx-viewport {
+        height: 100% !important;
+        border: 0px;
+        box-shadow: none;
+        margin: 0;
+        .main_slider {
+            height: 100% !important;
+            > li {
+                height: 100% !important;
+                .fill {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center !important;
+                    background-size: cover !important;
+                }
+                .txt_sldr {
+                    position: absolute;
+                    width: 70%;
+                    left: 0px;
+                    right: 0px;
+                    top: 50%;
+                    @include translate(0, -50%);
+                    margin: auto;
+                    text-align: center;
+                    opacity: 0;
+                    h4 {
+                        font-weight: bold;
+                        color: #fff;
+                        font-size: $font-size-slider;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        margin: 0px; //                        text-shadow: 0 2px 6px #073b77, 0 2px 4px rgba(0, 0, 0, 0.5);
+                        @include text-shadow($x: 0px, $y: 3px, $blur: 5px, $color: rgba(0, 0, 0, .5));
+                    }
+                }
+                &.active-slide .txt_sldr {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .bx-controls.bx-has-pager {
+        text-align: center;
+        .bx-pager.bx-default-pager {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: inline-block;
+            width: auto;
+            padding: $padding-default/1.5 $padding-default*2;
+            background: rgba($clr-twilight-blue, .37);
+            @include translate(-50%, 0);
+            line-height: 10px;
+            @include border-top-radius();
+            a {
+                background: rgba(255, 255, 255, 0);
+                border: 2px solid #fff;
+                height: 14px;
+                width: 14px;
+                border-radius: 10px;
+                @include transition($fun: ease-in, $time:.35s);
+                &.active {
+                    background: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+
+}

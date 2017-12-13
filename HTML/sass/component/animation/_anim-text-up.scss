@@ -1,0 +1,73 @@
+//banner text animation
+.anim-text-up,li.active-slide .txt_sldr h4{
+  animation: anim-text-up ease-out .25s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  -webkit-animation: anim-text-up ease-out .25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: anim-text-up ease-out .25s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: anim-text-up ease-out .25s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: anim-text-up ease-out .25s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes anim-text-up{
+  0% {
+    opacity:0;
+    transform:  translate(0px,50px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
+
+@-moz-keyframes anim-text-up{
+  0% {
+    opacity:0;
+    -moz-transform:  translate(0px,50px)  ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-webkit-keyframes anim-text-up {
+  0% {
+    opacity:0;
+    -webkit-transform:  translate(0px,50px)  ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-o-keyframes anim-text-up {
+  0% {
+    opacity:0;
+    -o-transform:  translate(0px,50px)  ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  ;
+  }
+}
+
+@-ms-keyframes anim-text-up {
+  0% {
+    opacity:0;
+    -ms-transform:  translate(0px,50px)  ;
+  }
+  100% {
+    opacity:1;
+    -ms-transform:  translate(0px,0px)  ;
+  }
+}
