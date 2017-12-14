@@ -1,0 +1,86 @@
+.post-banner {
+    background-position: center !important;
+    background-size: cover !important;
+    padding: $padding-default*4 0;
+    .post-banner-wrapper {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        .heading {
+            color: $clr-white;
+            font-size: $font-size-xlarge;
+            font-weight: bold;
+            margin: 0;
+            small {
+                display: block;
+                color: $clr-white;
+                font-size: $font-size-large;
+                font-weight: bold;
+                padding-bottom: $padding-default/3;
+            }
+        }
+
+        .btn-post-banner {
+            @include button-variant($background: $clr-twilight-blue);
+            padding: $padding-default $padding-default*3;
+            margin-top: $padding-default;
+            i{
+                margin-left: $padding-default/2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mediaQuery-sm) {
+    .post-banner {
+        padding: $padding-default*3 0;
+        .post-banner-wrapper {
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+            .heading {
+                font-size: $font-size-xlarge - 6;
+            }
+        }
+    }
+}
+@media only screen and (max-width: $mediaQuery-xs) {
+    .post-banner {
+        padding: $padding-default*2 0;
+        .post-banner-wrapper {
+            .heading {
+                font-size: $font-size-xlarge - 11;
+                small{
+                    font-size: $font-size-large - 4;
+                }
+            }
+            .btn-post-banner {
+                font-size: $font-size-default;
+                padding-left: 0;
+                padding-right: 0;text-align: center;
+                
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+            }
+        }
+    }
+}

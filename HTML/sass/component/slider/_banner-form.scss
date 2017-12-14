@@ -1,20 +1,18 @@
 .banner-form {
     background: $clr-twilight-blue;
     color: $clr-white;
-    padding: $padding-default*2 0;
+    padding-top: $padding-default*2;
     position: relative;
     max-width: 40%;
     padding-right: $padding-default*6;
-    @include translate ($x:0, $y:350px) ;
-    @include transition ($time:.1s,$fun:ease-out) ;
-    &.open{
-        @include translate ($x:0, $y:0px) ;
+    @include translate ($x: 0, $y:350px);
+    @include transition ($time: .1s, $fun:ease-out);
+    &.open {
+        @include translate ($x: 0, $y:0px);
     }
-    .form-wrapper{
+    .form-wrapper {
         position: relative;
-    }
-
-    //    @include translate(0,50%);
+    } //    @include translate(0,50%);
     //    z-index:----- base/_z-index.scss
     &:before {
         content: '';
@@ -32,6 +30,9 @@
         font-weight: bold;
         margin: 0;
     }
+    .banner-form-xs-toggel {
+        padding-bottom: $padding-default*2;
+    }
     .sub-heading {
         display: block;
         color: $clr-white;
@@ -40,9 +41,59 @@
         margin: 0;
         font-weight: 300;
         margin-bottom: $padding-default;
-        &.padding-top{
+        &.padding-top {
             @extend .padding-top;
         }
     }
+    .wrapper-btn-banner {
+        position: relative;
+    }
+    .btn-banner-form {
+        @include button-variant();
+        padding: $padding-default/2 - 1 0;
+        text-align: center;
+        width: 40px;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        margin-left: $padding-default;
+    }
+    &.open {
+        .btn-banner-form {
+            i:before {
+                content: '\f00d';
+            }
+        }
+    }
 
+}
+
+@media only screen and (max-width: $mediaQuery-sm) {
+    .banner-form {
+        @include translate ($x: 0, $y:0px);
+        position: relative;
+        max-width: inherit;
+        padding-right: $padding-default * 3.666666666666667;
+        &:before {
+            right: -100%;
+        }
+        .banner-form-xs-toggel {
+            display: none;
+        }        
+    }
+}
+
+@media only screen and (max-width: $mediaQuery-xs) {
+    .form-group {
+        font-size: $font-size-default - 2;
+        .form-control {
+            font-size: $font-size-default - 2;
+        }
+    }
+}
+@media only screen and (min-width: $mediaQuery-sm + 1) {
+    .banner-form-xs-toggel {
+        display: block!important;
+        height: auto !important;
+    }
 }

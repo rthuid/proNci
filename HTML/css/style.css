@@ -1,101 +1,13 @@
 @charset "UTF-8";
 /*****************************************************/
 /*****************************************************/
-/**************************************************************************************************************
-***************************************************************************************************************/
-/***************************************************************************************************************
-***************************************************************************************************************/
-/***************************************************************************************************************
-***************************************************************************************************************/
-/***************************************************************************************************************
-***************************************************************************************************************/
-/***************************************************************************************************************
-***************************************************************************************************************/
-/***************************************************************************************************************
-***************************************************************************************************************/
-/********************************************************
-********************************************************/
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
-/* line 4, ../sass/helper/_extend.scss */
-.margin-none {
-  margin: 0;
-}
-
-/* line 7, ../sass/helper/_extend.scss */
-.margin-top-none {
-  margin-top: 0;
-}
-
-/* line 10, ../sass/helper/_extend.scss */
-.margin-right-none {
-  margin-right: 0;
-}
-
-/* line 13, ../sass/helper/_extend.scss */
-.margin-bottom-none {
-  margin-bottom: 0;
-}
-
-/* line 16, ../sass/helper/_extend.scss */
-.margin-left-none {
-  margin-left: 0;
-}
-
-/********************************************************
-********************************************************/
-/********************************************************
-********************************************************/
-/* line 25, ../sass/helper/_extend.scss */
-.padding-none {
-  padding: 0;
-}
-
-/* line 28, ../sass/helper/_extend.scss */
-.padding-top-none {
-  padding-top: 0;
-}
-
-/* line 31, ../sass/helper/_extend.scss */
-.padding-right-none {
-  padding-right: 0;
-}
-
-/* line 34, ../sass/helper/_extend.scss */
-.padding-bottom-none {
-  padding-bottom: 0;
-}
-
-/* line 37, ../sass/helper/_extend.scss */
-.padding-left-none {
-  padding-left: 0;
-}
-
-/* line 40, ../sass/helper/_extend.scss */
-.padding-top, .banner-form .sub-heading.padding-top {
-  padding-top: 15px;
-}
-
-/* line 43, ../sass/helper/_extend.scss */
-.padding-bottom {
-  padding-bottom: 15px;
-}
-
-/* line 46, ../sass/helper/_extend.scss */
-.padding-left {
-  padding-left: 15px;
-}
-
-/* line 49, ../sass/helper/_extend.scss */
-.padding-right {
-  padding-right: 15px;
-}
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 /* FONT PATH
  * -------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 @font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -12654,17 +12566,139 @@ button.close {
     display: none !important;
   }
 }
-/* line 1, ../sass/vendors/reset.scss */
+/**************************************************************************************************************
+***************************************************************************************************************/
+/***************************************************************************************************************
+***************************************************************************************************************/
+/***************************************************************************************************************
+***************************************************************************************************************/
+/***************************************************************************************************************
+***************************************************************************************************************/
+/***************************************************************************************************************
+***************************************************************************************************************/
+/***************************************************************************************************************
+***************************************************************************************************************/
+/********************************************************
+********************************************************/
+/* line 4, ../sass/helper/_extend.scss */
+.margin-none {
+  margin: 0;
+}
+
+/* line 7, ../sass/helper/_extend.scss */
+.margin-top-none {
+  margin-top: 0;
+}
+
+/* line 10, ../sass/helper/_extend.scss */
+.margin-right-none {
+  margin-right: 0;
+}
+
+/* line 13, ../sass/helper/_extend.scss */
+.margin-bottom-none {
+  margin-bottom: 0;
+}
+
+/* line 16, ../sass/helper/_extend.scss */
+.margin-left-none {
+  margin-left: 0;
+}
+
+/********************************************************
+********************************************************/
+/********************************************************
+********************************************************/
+/* line 25, ../sass/helper/_extend.scss */
+.padding-none {
+  padding: 0;
+}
+
+/* line 28, ../sass/helper/_extend.scss */
+.padding-top-none {
+  padding-top: 0;
+}
+
+/* line 31, ../sass/helper/_extend.scss */
+.padding-right-none {
+  padding-right: 0;
+}
+
+/* line 34, ../sass/helper/_extend.scss */
+.padding-bottom-none {
+  padding-bottom: 0;
+}
+
+/* line 37, ../sass/helper/_extend.scss */
+.padding-left-none {
+  padding-left: 0;
+}
+
+/* line 40, ../sass/helper/_extend.scss */
+.padding-top, .banner-form .sub-heading.padding-top {
+  padding-top: 15px;
+}
+
+/* line 43, ../sass/helper/_extend.scss */
+.padding-bottom {
+  padding-bottom: 15px;
+}
+
+/* line 46, ../sass/helper/_extend.scss */
+.padding-left {
+  padding-left: 15px;
+}
+
+/* line 49, ../sass/helper/_extend.scss */
+.padding-right {
+  padding-right: 15px;
+}
+
+/********************************************************
+********************************************************/
+/********************************************************
+********************************************************/
+/* line 58, ../sass/helper/_extend.scss */
+.space {
+  padding-top: 15px;
+  clear: both;
+}
+
+/* line 1, ../sass/base/_reset.scss */
 .row.gutters-banner-form {
   margin-right: -7.5px;
   margin-left: -7.5px;
 }
-/* line 5, ../sass/vendors/reset.scss */
+/* line 5, ../sass/base/_reset.scss */
 .row.gutters-banner-form > [class^="col-"], .row.gutters-banner-form > [class*=" col-"] {
   padding-right: 7.5px;
   padding-left: 7.5px;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 13, ../sass/base/_reset.scss */
+  .row.gutters-banner-form {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  /* line 17, ../sass/base/_reset.scss */
+  .row.gutters-banner-form > [class^="col-"], .row.gutters-banner-form > [class*=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 25, ../sass/base/_reset.scss */
+  .row.gutters-banner-form {
+    margin-right: -3px;
+    margin-left: -3px;
+  }
+  /* line 29, ../sass/base/_reset.scss */
+  .row.gutters-banner-form > [class^="col-"], .row.gutters-banner-form > [class*=" col-"] {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+}
 /* line 1, ../sass/base/_global.scss */
 html,
 body {
@@ -13083,23 +13117,77 @@ a:hover, a:active, a:focus {
 }
 /* line 113, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info a {
+  color: #fff;
+  background-color: #0c60cb;
+  border: solid 1px #0c60cb;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 7.5px 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: inherit;
+  border-color: transparent;
   display: block;
   padding: 10px 0;
   text-align: center;
   background: #0c60cb;
   color: #fff;
 }
-/* line 120, ../sass/layout/header/_main-nav.scss */
+/* line 13, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a:focus, .main-nav-wrapper .main-nav-inner .request-info a.focus {
+  color: #fff;
+  background-color: #0a52ae;
+  border-color: #083e83;
+}
+/* line 19, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a:hover {
+  color: #fff;
+  background-color: #0b55b3;
+  border-color: #094591;
+}
+/* line 24, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a:active, .main-nav-wrapper .main-nav-inner .request-info a.active, .open > .main-nav-wrapper .main-nav-inner .request-info a.dropdown-toggle {
+  color: #fff;
+  background-color: #0a52ae;
+  border-color: #094591;
+}
+/* line 31, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a:active:hover, .main-nav-wrapper .main-nav-inner .request-info a:active:focus, .main-nav-wrapper .main-nav-inner .request-info a:active.focus, .main-nav-wrapper .main-nav-inner .request-info a.active:hover, .main-nav-wrapper .main-nav-inner .request-info a.active:focus, .main-nav-wrapper .main-nav-inner .request-info a.active.focus, .open > .main-nav-wrapper .main-nav-inner .request-info a.dropdown-toggle:hover, .open > .main-nav-wrapper .main-nav-inner .request-info a.dropdown-toggle:focus, .open > .main-nav-wrapper .main-nav-inner .request-info a.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #073979;
+  border-color: #052753;
+  outline: none 0;
+}
+/* line 40, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a:active, .main-nav-wrapper .main-nav-inner .request-info a.active, .open > .main-nav-wrapper .main-nav-inner .request-info a.dropdown-toggle {
+  background-image: none;
+  outline: none 0;
+}
+/* line 49, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a.disabled:hover, .main-nav-wrapper .main-nav-inner .request-info a.disabled:focus, .main-nav-wrapper .main-nav-inner .request-info a.disabled.focus, .main-nav-wrapper .main-nav-inner .request-info a[disabled]:hover, .main-nav-wrapper .main-nav-inner .request-info a[disabled]:focus, .main-nav-wrapper .main-nav-inner .request-info a[disabled].focus, fieldset[disabled] .main-nav-wrapper .main-nav-inner .request-info a:hover, fieldset[disabled] .main-nav-wrapper .main-nav-inner .request-info a:focus, fieldset[disabled] .main-nav-wrapper .main-nav-inner .request-info a.focus {
+  background-color: #0c60cb;
+  border-color: #0c60cb;
+  outline: none 0;
+}
+/* line 58, ../sass/helper/mixins/_buttons.scss */
+.main-nav-wrapper .main-nav-inner .request-info a .badge {
+  color: #0c60cb;
+  background-color: #fff;
+}
+/* line 124, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info a i {
   margin-left: 7.5px;
 }
-/* line 124, ../sass/layout/header/_main-nav.scss */
+/* line 128, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info .proudly {
   position: absolute;
   top: 100%;
   right: 0;
   width: 100%;
-  margin-top: 8px;
+  margin-top: 7px;
   z-index: -1;
   background: #eeeeee;
   color: #073b77;
@@ -13125,22 +13213,22 @@ a:hover, a:active, a:focus {
   -ms-flex-align: center;
   align-items: center;
 }
-/* line 153, ../sass/layout/header/_main-nav.scss */
+/* line 157, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info .proudly > * {
   margin: 0;
   padding: 0;
 }
-/* line 157, ../sass/layout/header/_main-nav.scss */
+/* line 161, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info .proudly > img {
   margin-right: 10px;
 }
-/* line 160, ../sass/layout/header/_main-nav.scss */
+/* line 164, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info .proudly h3 {
   font-size: 18px;
   color: #073b77;
   font-weight: bold;
 }
-/* line 164, ../sass/layout/header/_main-nav.scss */
+/* line 168, ../sass/layout/header/_main-nav.scss */
 .main-nav-wrapper .main-nav-inner .request-info .proudly h3 small {
   font-size: 16px;
   color: #073b77;
@@ -13149,28 +13237,28 @@ a:hover, a:active, a:focus {
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 180, ../sass/layout/header/_main-nav.scss */
+  /* line 184, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner {
     font-size: 13px;
   }
-  /* line 185, ../sass/layout/header/_main-nav.scss */
+  /* line 189, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li > i {
     font-size: 11px;
   }
-  /* line 191, ../sass/layout/header/_main-nav.scss */
+  /* line 195, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info {
     min-width: 180px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 201, ../sass/layout/header/_main-nav.scss */
+  /* line 205, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     font-size: 16px;
   }
-  /* line 206, ../sass/layout/header/_main-nav.scss */
+  /* line 211, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav {
     display: none;
     -webkit-order: 2;
@@ -13182,14 +13270,14 @@ a:hover, a:active, a:focus {
     margin-left: -15px;
     margin-right: -15px;
   }
-  /* line 216, ../sass/layout/header/_main-nav.scss */
+  /* line 221, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     border-top: 1px solid #08458a;
   }
-  /* line 221, ../sass/layout/header/_main-nav.scss */
+  /* line 226, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -13214,7 +13302,7 @@ a:hover, a:active, a:focus {
     align-self: stretch;
     padding: 0;
   }
-  /* line 245, ../sass/layout/header/_main-nav.scss */
+  /* line 250, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li > a {
     -webkit-flex: auto;
     -ms-flex: auto;
@@ -13222,7 +13310,7 @@ a:hover, a:active, a:focus {
     padding: 10px 0;
     padding-left: 15px;
   }
-  /* line 252, ../sass/layout/header/_main-nav.scss */
+  /* line 257, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li > i {
     -webkit-flex: 0;
     -ms-flex: 0;
@@ -13232,19 +13320,19 @@ a:hover, a:active, a:focus {
     text-align: right;
     padding-right: 30px;
   }
-  /* line 261, ../sass/layout/header/_main-nav.scss */
+  /* line 266, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li.sub-menu > ul.sub-list {
     -webkit-flex: 0 1 100%;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     position: relative;
   }
-  /* line 267, ../sass/layout/header/_main-nav.scss */
+  /* line 272, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav > ul > li.sub-menu > ul.sub-list > li > a {
     padding: 10px 15px;
     padding-left: 37.5px;
   }
-  /* line 276, ../sass/layout/header/_main-nav.scss */
+  /* line 281, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -13254,32 +13342,46 @@ a:hover, a:active, a:focus {
     align-self: stretch;
     font-weight: bold;
   }
-  /* line 284, ../sass/layout/header/_main-nav.scss */
+  /* line 290, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info a {
     background: none;
   }
-  /* line 287, ../sass/layout/header/_main-nav.scss */
+  /* line 293, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info a > i:before {
     content: '\f178';
   }
-  /* line 292, ../sass/layout/header/_main-nav.scss */
+  /* line 298, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info .proudly {
     width: 235px;
     margin-top: 0;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 304, ../sass/layout/header/_main-nav.scss */
+  /* line 311, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .request-info .proudly {
-    width: 235px;
     max-width: 100%;
+    width: 265px;
     margin-top: 0;
     left: 0;
     margin: auto;
+    padding: 7.5px 15px;
+  }
+  /* line 318, ../sass/layout/header/_main-nav.scss */
+  .main-nav-wrapper .main-nav-inner .request-info .proudly h3 {
+    font-size: 16px;
+  }
+  /* line 320, ../sass/layout/header/_main-nav.scss */
+  .main-nav-wrapper .main-nav-inner .request-info .proudly h3 small {
+    font-size: 16px;
+    display: inline-block;
+  }
+  /* line 325, ../sass/layout/header/_main-nav.scss */
+  .main-nav-wrapper .main-nav-inner .request-info .proudly > img {
+    height: 37px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 317, ../sass/layout/header/_main-nav.scss */
+  /* line 335, ../sass/layout/header/_main-nav.scss */
   .main-nav-wrapper .main-nav-inner .main-nav {
     display: block !important;
   }
@@ -13394,7 +13496,7 @@ a:hover, a:active, a:focus {
   overflow: hidden;
 }
 
-/* line 5, ../sass/component/slider/_slider.scss */
+/* line 6, ../sass/component/slider/_slider.scss */
 .bx-wrapper {
   margin: 0;
   top: 0;
@@ -13404,29 +13506,29 @@ a:hover, a:active, a:focus {
   position: absolute;
   height: 100% !important;
 }
-/* line 13, ../sass/component/slider/_slider.scss */
+/* line 14, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport {
   height: 100% !important;
   border: 0px;
   box-shadow: none;
   margin: 0;
 }
-/* line 18, ../sass/component/slider/_slider.scss */
+/* line 19, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider {
   height: 100% !important;
 }
-/* line 20, ../sass/component/slider/_slider.scss */
+/* line 21, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider > li {
   height: 100% !important;
 }
-/* line 22, ../sass/component/slider/_slider.scss */
+/* line 23, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider > li .fill {
   width: 100%;
   height: 100%;
   background-position: center !important;
   background-size: cover !important;
 }
-/* line 28, ../sass/component/slider/_slider.scss */
+/* line 29, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider > li .txt_sldr {
   position: absolute;
   width: 70%;
@@ -13442,7 +13544,7 @@ a:hover, a:active, a:focus {
   text-align: center;
   opacity: 0;
 }
-/* line 38, ../sass/component/slider/_slider.scss */
+/* line 39, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider > li .txt_sldr h4 {
   font-weight: bold;
   color: #fff;
@@ -13452,15 +13554,15 @@ a:hover, a:active, a:focus {
   margin: 0px;
   text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
-/* line 48, ../sass/component/slider/_slider.scss */
+/* line 49, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-viewport .main_slider > li.active-slide .txt_sldr {
   opacity: 1;
 }
-/* line 54, ../sass/component/slider/_slider.scss */
+/* line 55, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-pager {
   text-align: center;
 }
-/* line 56, ../sass/component/slider/_slider.scss */
+/* line 57, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-pager .bx-pager.bx-default-pager {
   position: absolute;
   bottom: 0;
@@ -13478,7 +13580,7 @@ a:hover, a:active, a:focus {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-/* line 67, ../sass/component/slider/_slider.scss */
+/* line 68, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-pager .bx-pager.bx-default-pager a {
   background: rgba(255, 255, 255, 0);
   border: 2px solid #fff;
@@ -13491,16 +13593,55 @@ a:hover, a:active, a:focus {
   -o-transition: all 0.35s ease-in;
   transition: all 0.35s ease-in;
 }
-/* line 74, ../sass/component/slider/_slider.scss */
+/* line 75, ../sass/component/slider/_slider.scss */
 .bx-wrapper .bx-controls.bx-has-pager .bx-pager.bx-default-pager a.active {
   background: white;
 }
 
+@media only screen and (max-width: 767px) {
+  /* line 86, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper {
+    height: 360px !important;
+    position: relative;
+  }
+  /* line 90, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper .bx-viewport .main_slider {
+    height: 100% !important;
+  }
+  /* line 93, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper .bx-viewport .main_slider > li .txt_sldr {
+    width: 95%;
+  }
+  /* line 95, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper .bx-viewport .main_slider > li .txt_sldr h4 {
+    font-size: 45px;
+  }
+  /* line 103, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-controls.bx-has-pager {
+    display: none;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 110, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper {
+    height: 342px !important;
+  }
+  /* line 116, ../sass/component/slider/_slider.scss */
+  .slide_out .bx-wrapper .bx-viewport .main_slider > li .txt_sldr h4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 130, ../sass/component/slider/_slider.scss */
+  .bx-wrapper .bx-controls.bx-has-pager .bx-pager.bx-default-pager {
+    padding: 10px 15px;
+  }
+}
 /* line 1, ../sass/component/slider/_banner-form.scss */
 .banner-form {
   background: #073b77;
   color: #fff;
-  padding: 30px 0;
+  padding-top: 30px;
   position: relative;
   max-width: 40%;
   padding-right: 90px;
@@ -13527,7 +13668,7 @@ a:hover, a:active, a:focus {
 .banner-form .form-wrapper {
   position: relative;
 }
-/* line 19, ../sass/component/slider/_banner-form.scss */
+/* line 17, ../sass/component/slider/_banner-form.scss */
 .banner-form:before {
   content: '';
   position: absolute;
@@ -13539,13 +13680,17 @@ a:hover, a:active, a:focus {
   background: #073b77;
   z-index: -1;
 }
-/* line 30, ../sass/component/slider/_banner-form.scss */
+/* line 28, ../sass/component/slider/_banner-form.scss */
 .banner-form .heading {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
-/* line 35, ../sass/component/slider/_banner-form.scss */
+/* line 33, ../sass/component/slider/_banner-form.scss */
+.banner-form .banner-form-xs-toggel {
+  padding-bottom: 30px;
+}
+/* line 36, ../sass/component/slider/_banner-form.scss */
 .banner-form .sub-heading {
   display: block;
   color: #fff;
@@ -13555,7 +13700,115 @@ a:hover, a:active, a:focus {
   font-weight: 300;
   margin-bottom: 15px;
 }
+/* line 48, ../sass/component/slider/_banner-form.scss */
+.banner-form .wrapper-btn-banner {
+  position: relative;
+}
+/* line 51, ../sass/component/slider/_banner-form.scss */
+.banner-form .btn-banner-form {
+  color: #fff;
+  background-color: #0c60cb;
+  border: solid 1px #0c60cb;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 7.5px 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding: 6.5px 0;
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 15px;
+}
+/* line 13, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form:focus, .banner-form .btn-banner-form.focus {
+  color: #fff;
+  background-color: #0a52ae;
+  border-color: #083e83;
+}
+/* line 19, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form:hover {
+  color: #fff;
+  background-color: #0b55b3;
+  border-color: #094591;
+}
+/* line 24, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form:active, .banner-form .btn-banner-form.active, .open > .banner-form .btn-banner-form.dropdown-toggle {
+  color: #fff;
+  background-color: #0a52ae;
+  border-color: #094591;
+}
+/* line 31, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form:active:hover, .banner-form .btn-banner-form:active:focus, .banner-form .btn-banner-form:active.focus, .banner-form .btn-banner-form.active:hover, .banner-form .btn-banner-form.active:focus, .banner-form .btn-banner-form.active.focus, .open > .banner-form .btn-banner-form.dropdown-toggle:hover, .open > .banner-form .btn-banner-form.dropdown-toggle:focus, .open > .banner-form .btn-banner-form.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #073979;
+  border-color: #052753;
+  outline: none 0;
+}
+/* line 40, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form:active, .banner-form .btn-banner-form.active, .open > .banner-form .btn-banner-form.dropdown-toggle {
+  background-image: none;
+  outline: none 0;
+}
+/* line 49, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form.disabled:hover, .banner-form .btn-banner-form.disabled:focus, .banner-form .btn-banner-form.disabled.focus, .banner-form .btn-banner-form[disabled]:hover, .banner-form .btn-banner-form[disabled]:focus, .banner-form .btn-banner-form[disabled].focus, fieldset[disabled] .banner-form .btn-banner-form:hover, fieldset[disabled] .banner-form .btn-banner-form:focus, fieldset[disabled] .banner-form .btn-banner-form.focus {
+  background-color: #0c60cb;
+  border-color: #0c60cb;
+  outline: none 0;
+}
+/* line 58, ../sass/helper/mixins/_buttons.scss */
+.banner-form .btn-banner-form .badge {
+  color: #0c60cb;
+  background-color: #fff;
+}
+/* line 63, ../sass/component/slider/_banner-form.scss */
+.banner-form.open .btn-banner-form i:before {
+  content: '\f00d';
+}
 
+@media only screen and (max-width: 767px) {
+  /* line 72, ../sass/component/slider/_banner-form.scss */
+  .banner-form {
+    -moz-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    position: relative;
+    max-width: inherit;
+    padding-right: 55.0px;
+  }
+  /* line 77, ../sass/component/slider/_banner-form.scss */
+  .banner-form:before {
+    right: -100%;
+  }
+  /* line 80, ../sass/component/slider/_banner-form.scss */
+  .banner-form .banner-form-xs-toggel {
+    display: none;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 87, ../sass/component/slider/_banner-form.scss */
+  .form-group {
+    font-size: 14px;
+  }
+  /* line 89, ../sass/component/slider/_banner-form.scss */
+  .form-group .form-control {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 95, ../sass/component/slider/_banner-form.scss */
+  .banner-form-xs-toggel {
+    display: block !important;
+    height: auto !important;
+  }
+}
 /* line 1, ../sass/component/form/_input.scss */
 .form-control {
   border-radius: 0;
@@ -13622,103 +13875,198 @@ textarea.form-control {
   border-radius: 0;
   font-size: 18px;
   padding: 7.5px 30px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
-/* line 12, ../sass/helper/mixins/_buttons.scss */
+/* line 13, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue:focus, .btn-water-blue.focus {
   color: #fff;
-  background-color: #09499b;
-  border-color: #052753;
+  background-color: #0a52ae;
+  border-color: #083e83;
 }
-/* line 18, ../sass/helper/mixins/_buttons.scss */
+/* line 19, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue:hover {
   color: #fff;
-  background-color: #09499b;
+  background-color: #0b55b3;
   border-color: #094591;
 }
-/* line 23, ../sass/helper/mixins/_buttons.scss */
+/* line 24, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue:active, .btn-water-blue.active, .open > .btn-water-blue.dropdown-toggle {
   color: #fff;
-  background-color: #09499b;
+  background-color: #0a52ae;
   border-color: #094591;
 }
-/* line 30, ../sass/helper/mixins/_buttons.scss */
+/* line 31, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue:active:hover, .btn-water-blue:active:focus, .btn-water-blue:active.focus, .btn-water-blue.active:hover, .btn-water-blue.active:focus, .btn-water-blue.active.focus, .open > .btn-water-blue.dropdown-toggle:hover, .open > .btn-water-blue.dropdown-toggle:focus, .open > .btn-water-blue.dropdown-toggle.focus {
   color: #fff;
   background-color: #073979;
   border-color: #052753;
   outline: none 0;
 }
-/* line 39, ../sass/helper/mixins/_buttons.scss */
+/* line 40, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue:active, .btn-water-blue.active, .open > .btn-water-blue.dropdown-toggle {
   background-image: none;
   outline: none 0;
 }
-/* line 48, ../sass/helper/mixins/_buttons.scss */
+/* line 49, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue.disabled:hover, .btn-water-blue.disabled:focus, .btn-water-blue.disabled.focus, .btn-water-blue[disabled]:hover, .btn-water-blue[disabled]:focus, .btn-water-blue[disabled].focus, fieldset[disabled] .btn-water-blue:hover, fieldset[disabled] .btn-water-blue:focus, fieldset[disabled] .btn-water-blue.focus {
   background-color: #0c60cb;
   border-color: #0c60cb;
   outline: none 0;
 }
-/* line 57, ../sass/helper/mixins/_buttons.scss */
+/* line 58, ../sass/helper/mixins/_buttons.scss */
 .btn-water-blue .badge {
   color: #0c60cb;
   background-color: #fff;
 }
 
-/* line 4, ../sass/component/form/_button.scss */
-.btn-banner-form {
+/* line 1, ../sass/component/_post-banner.scss */
+.post-banner {
+  background-position: center !important;
+  background-size: cover !important;
+  padding: 60px 0;
+}
+/* line 5, ../sass/component/_post-banner.scss */
+.post-banner .post-banner-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* line 24, ../sass/component/_post-banner.scss */
+.post-banner .post-banner-wrapper .heading {
   color: #fff;
-  background-color: #0c60cb;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+/* line 29, ../sass/component/_post-banner.scss */
+.post-banner .post-banner-wrapper .heading small {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+/* line 38, ../sass/component/_post-banner.scss */
+.post-banner .post-banner-wrapper .btn-post-banner {
+  color: #fff;
+  background-color: #073b77;
   border: solid 1px #0c60cb;
   border-radius: 0;
   font-size: 18px;
   padding: 7.5px 30px;
-  padding: 7.5px 0;
-  text-align: center;
-  width: 42px;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  margin-left: 15px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding: 15px 45px;
+  margin-top: 15px;
 }
-/* line 12, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form:focus, .btn-banner-form.focus {
+/* line 13, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner:focus, .post-banner .post-banner-wrapper .btn-post-banner.focus {
   color: #fff;
-  background-color: #09499b;
-  border-color: #052753;
+  background-color: #052d5a;
+  border-color: #083e83;
 }
-/* line 18, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form:hover {
+/* line 19, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner:hover {
   color: #fff;
-  background-color: #09499b;
+  background-color: #062f5f;
   border-color: #094591;
 }
-/* line 23, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form:active, .btn-banner-form.active, .open > .btn-banner-form.dropdown-toggle {
+/* line 24, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner:active, .post-banner .post-banner-wrapper .btn-post-banner.active, .open > .post-banner .post-banner-wrapper .btn-post-banner.dropdown-toggle {
   color: #fff;
-  background-color: #09499b;
+  background-color: #052d5a;
   border-color: #094591;
 }
-/* line 30, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form:active:hover, .btn-banner-form:active:focus, .btn-banner-form:active.focus, .btn-banner-form.active:hover, .btn-banner-form.active:focus, .btn-banner-form.active.focus, .open > .btn-banner-form.dropdown-toggle:hover, .open > .btn-banner-form.dropdown-toggle:focus, .open > .btn-banner-form.dropdown-toggle.focus {
+/* line 31, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner:active:hover, .post-banner .post-banner-wrapper .btn-post-banner:active:focus, .post-banner .post-banner-wrapper .btn-post-banner:active.focus, .post-banner .post-banner-wrapper .btn-post-banner.active:hover, .post-banner .post-banner-wrapper .btn-post-banner.active:focus, .post-banner .post-banner-wrapper .btn-post-banner.active.focus, .open > .post-banner .post-banner-wrapper .btn-post-banner.dropdown-toggle:hover, .open > .post-banner .post-banner-wrapper .btn-post-banner.dropdown-toggle:focus, .open > .post-banner .post-banner-wrapper .btn-post-banner.dropdown-toggle.focus {
   color: #fff;
-  background-color: #073979;
+  background-color: #021225;
   border-color: #052753;
   outline: none 0;
 }
-/* line 39, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form:active, .btn-banner-form.active, .open > .btn-banner-form.dropdown-toggle {
+/* line 40, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner:active, .post-banner .post-banner-wrapper .btn-post-banner.active, .open > .post-banner .post-banner-wrapper .btn-post-banner.dropdown-toggle {
   background-image: none;
   outline: none 0;
 }
-/* line 48, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form.disabled:hover, .btn-banner-form.disabled:focus, .btn-banner-form.disabled.focus, .btn-banner-form[disabled]:hover, .btn-banner-form[disabled]:focus, .btn-banner-form[disabled].focus, fieldset[disabled] .btn-banner-form:hover, fieldset[disabled] .btn-banner-form:focus, fieldset[disabled] .btn-banner-form.focus {
-  background-color: #0c60cb;
+/* line 49, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner.disabled:hover, .post-banner .post-banner-wrapper .btn-post-banner.disabled:focus, .post-banner .post-banner-wrapper .btn-post-banner.disabled.focus, .post-banner .post-banner-wrapper .btn-post-banner[disabled]:hover, .post-banner .post-banner-wrapper .btn-post-banner[disabled]:focus, .post-banner .post-banner-wrapper .btn-post-banner[disabled].focus, fieldset[disabled] .post-banner .post-banner-wrapper .btn-post-banner:hover, fieldset[disabled] .post-banner .post-banner-wrapper .btn-post-banner:focus, fieldset[disabled] .post-banner .post-banner-wrapper .btn-post-banner.focus {
+  background-color: #073b77;
   border-color: #0c60cb;
   outline: none 0;
 }
-/* line 57, ../sass/helper/mixins/_buttons.scss */
-.btn-banner-form .badge {
-  color: #0c60cb;
+/* line 58, ../sass/helper/mixins/_buttons.scss */
+.post-banner .post-banner-wrapper .btn-post-banner .badge {
+  color: #073b77;
   background-color: #fff;
+}
+/* line 42, ../sass/component/_post-banner.scss */
+.post-banner .post-banner-wrapper .btn-post-banner i {
+  margin-left: 7.5px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 50, ../sass/component/_post-banner.scss */
+  .post-banner {
+    padding: 45px 0;
+  }
+  /* line 52, ../sass/component/_post-banner.scss */
+  .post-banner .post-banner-wrapper {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+  /* line 59, ../sass/component/_post-banner.scss */
+  .post-banner .post-banner-wrapper .heading {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 66, ../sass/component/_post-banner.scss */
+  .post-banner {
+    padding: 30px 0;
+  }
+  /* line 69, ../sass/component/_post-banner.scss */
+  .post-banner .post-banner-wrapper .heading {
+    font-size: 25px;
+  }
+  /* line 71, ../sass/component/_post-banner.scss */
+  .post-banner .post-banner-wrapper .heading small {
+    font-size: 16px;
+  }
+  /* line 75, ../sass/component/_post-banner.scss */
+  .post-banner .post-banner-wrapper .btn-post-banner {
+    font-size: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+  }
 }

@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$mediaQuery-sm".
-        on line 12 of D:/Work/NCI Heritage/HTML/sass/vendors/reset.scss
+        on line 12 of D:/Work/NCI Heritage/HTML/sass/base/reset.scss
 
 7:         padding-right: 7.5px;
 8:         padding-left: 7.5px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$mediaQuery-sm".
 17:         & > [class^="col-"],
 
 Backtrace:
-D:/Work/NCI Heritage/HTML/sass/vendors/reset.scss:12
+D:/Work/NCI Heritage/HTML/sass/base/reset.scss:12
 C:/Program Files/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files/compass.app/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:536:in `run_interp_no_strip'
@@ -61,4 +61,4 @@ C:/Program Files/compass.app/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mediaQuery-sm\".\A         on line 12 of D:/Work/NCI Heritage/HTML/sass/vendors/reset.scss\A \A 7:         padding-right: 7.5px;\A 8:         padding-left: 7.5px;\A 9:     }\A 10: }\A 11: \A 12: @media only screen and (max-width: $mediaQuery-sm) {\A 13:     .row.gutters-banner-form {\A 14:         margin-right: -5px;\A 15:         margin-left: -5px;\A 16: \A 17:         & > [class^=\"col-\"],"; }
+  content: "Error: Undefined variable: \"$mediaQuery-sm\".\A         on line 12 of D:/Work/NCI Heritage/HTML/sass/base/reset.scss\A \A 7:         padding-right: 7.5px;\A 8:         padding-left: 7.5px;\A 9:     }\A 10: }\A 11: \A 12: @media only screen and (max-width: $mediaQuery-sm) {\A 13:     .row.gutters-banner-form {\A 14:         margin-right: -5px;\A 15:         margin-left: -5px;\A 16: \A 17:         & > [class^=\"col-\"],"; }

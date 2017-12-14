@@ -9,22 +9,23 @@
     border-radius: 0;
     font-size: $font-size-medium;
     padding: $padding-default/2 $padding-default*2;
+    @include transition($time:.3s,$fun:ease-in);
     &:focus,
     &.focus {
         color: $color;
-        background-color: darken($background, 10%);
-        border-color: darken($border, 25%);
+        background-color: darken($background, 6%);
+        border-color: darken($border, 15%);
     }
     &:hover {
         color: $color;
-        background-color: darken($background, 10%);
+        background-color: darken($background, 5%);
         border-color: darken($border, 12%);
     }
     &:active,
     &.active,
     .open > &.dropdown-toggle {
         color: $color;
-        background-color: darken($background, 10%);
+        background-color: darken($background, 6%);
         border-color: darken($border, 12%);
 
         &:hover,
